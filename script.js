@@ -20,7 +20,7 @@ let count = 0;
 
 //Disable All Buttons
 const disableButtons = () => {
-  btnRef.forEach((element) => (element.disabled = true));
+  //btnRef.forEach((element) => (element.disabled = true));
   //enable popup
   popupRef.classList.remove("hide");
 };
