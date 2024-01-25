@@ -3,7 +3,7 @@ let popupRef = document.querySelector(".popup");
 let newgameBtn = document.getElementById("new-game");
 let restartBtn = document.getElementById("restart");
 let msgRef = document.getElementById("message");
-//Winning Pattern Array
+
 let winningPattern = [
   [0, 1, 2],
   [0, 3, 6],
@@ -14,11 +14,11 @@ let winningPattern = [
   [0, 4, 8],
   [2, 4, 6],
 ];
-//Player 'X' plays first
+
 let xTurn = true;
 let count = 0;
 
-//Disable All Buttons
+
 const disableButtons = () => {
   btnRef.forEach((element) => (element.disabled = true));
   //enable popup
