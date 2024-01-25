@@ -45,13 +45,13 @@ const winFunction = (letter) => {
   }
 };
 
-//Function for draw
+
 const drawFunction = () => {
   disableButtons();
   msgRef.innerHTML = "&#x1F60E; <br> It's a Draw";
 };
 
-//New Game
+
 newgameBtn.addEventListener("click", () => {
   count = 0;
   enableButtons();
@@ -63,7 +63,7 @@ restartBtn.addEventListener("click", () => {
 
 //Win Logic
 const winChecker = () => {
-  //Loop through all win patterns
+ 
   for (let i of winningPattern) {
     let [element1, element2, element3] = [
       btnRef[i[0]].innerText,
